@@ -22,6 +22,7 @@ def game_core_val(number):
                 return(count) # выход из цикла, если число было угадано   
 def score_game(game_core):
     '''Запускаем игру 1000 раз, чтобы узнать, как быстро игра угадывает число'''
+    import numpy as np
     count_ls = []
     np.random.seed(1)  # фиксируем RANDOM SEED, чтобы эксперимент был воспроизводим
     random_array = np.random.randint(1,101, size=(1000))
